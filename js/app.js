@@ -31,7 +31,7 @@ app.config([
 
     .state('home', {
       parent: 'index',
-      url: '/home',
+      url: '/home?thony',
       views: {
         'main@index': {
           templateUrl: 'partials/home.html',

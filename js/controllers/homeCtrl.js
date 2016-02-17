@@ -25,7 +25,10 @@ app.controller('HomeCtrl', [
   '$anchorScroll',
   '$location',
   '$timeout',
-  function($scope, utils, $anchorScroll, $location, $timeout) {
+  '$state',
+  function($scope, utils, $anchorScroll, $location, $timeout, $state) {
+    console.log(JSON.stringify($state.params));
+    $scope.thony = $state.params.thony;
     $timeout(function() {
       $anchorScroll();
     }, 0)
