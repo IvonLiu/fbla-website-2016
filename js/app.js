@@ -1,4 +1,4 @@
-var app = angular.module('fbla', ['ui.router', 'firebase', 'smoothScroll']);
+var app = angular.module('fbla', ['ui.router', 'firebase', 'smoothScroll', 'ngAnimate']);
 
 app.config([
   '$stateProvider',
