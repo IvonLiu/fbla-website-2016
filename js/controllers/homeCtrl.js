@@ -7,7 +7,7 @@ app.directive('slide', [
       link: function(scope, elem, attrs) {
         scope.onResize = function() {
           var navbar = $('.navbar')[0];
-          var height = $window.innerHeight - navbar.clientHeight;
+          var height = $window.innerHeight/* - navbar.clientHeight*/;
           elem.css('height', height);
         };
         scope.onResize();
@@ -27,10 +27,9 @@ app.controller('HomeCtrl', [
   '$timeout',
   '$state',
   function($scope, utils, $anchorScroll, $location, $timeout, $state) {
-    console.log(JSON.stringify($state.params));
     $scope.thony = $state.params.thony;
     $timeout(function() {
       $anchorScroll();
-    }, 0)
+    }, 0);
   }
 ]);

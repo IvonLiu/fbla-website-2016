@@ -8,6 +8,21 @@ a[ng-click] {
 .fade.ng-hide {
   opacity: 0;
 }
+.main-content {
+  margin-top:50px;
+}
+nav.navbar {
+  transition: background linear 0.3s;
+}
+nav.navbar.navbar-transparent {
+  background: rgba(0, 0, 0, 0.0);
+}
+.navbar-inverse.navbar-transparent li.active {
+  background: rgba(8, 8, 8, 0.1);
+}
+.navbar-inverse.navbar-transparent .navbar-nav>.active>a, .navbar-inverse.navbar-transparent .navbar-nav>.active>a:focus, .navbar-inverse.navbar-transparent .navbar-nav>.active>a:hover {
+  background: rgba(8, 8, 8, 0.1);
+}
 
 /**
  * Home page
@@ -15,6 +30,7 @@ a[ng-click] {
 
 div.slide {
   width: 100%;
+  padding-top:50px;
 }
 div#slide-top {
   background: url(../images/bg-main.jpg) no-repeat center center fixed;
@@ -52,13 +68,18 @@ a.anchor {
 .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
   margin-top: 0;
 }
-div.centered-container {
+div.centered-container, div.vertical-centered-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+div.centered-container {
   justify-content: center;
+}
+div.vertical-centered-container {
+  justify-content: flex-start;
 }
 h1.main-title {
   color: white;
@@ -70,6 +91,9 @@ h1.title, h1.title-inverse {
 }
 h1.title-inverse {
   color: #ecf0f1;
+}
+.accent {
+  color: #c0392b;
 }
 div.transparent-panel, div.transparent-panel-inverse {
   width: 80%;
@@ -92,6 +116,7 @@ div.transparent-panel-inverse {
 }
 #bakery-textbox {
   margin-top: 16px;
+  width: 50%;
 }
 #bakery-textbox p {
   font-size: 1.5em;
@@ -228,7 +253,7 @@ ul.timeslots {
 /* Move down content because we have a fixed navbar that is 50px tall */
 
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 
 /*
@@ -311,23 +336,4 @@ body {
 }
 .main .page-header {
   margin-top: 0;
-}
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
 }

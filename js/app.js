@@ -53,7 +53,6 @@ app.config([
         }
       }
     })
-
     .state('menu.food', {
       url: '/food',
       views: {
@@ -63,13 +62,21 @@ app.config([
         }
       }
     })
-
     .state('menu.drinks', {
       url: '/drinks',
       views: {
         'content@sidebar': {
           templateUrl: 'partials/menu.html',
           controller: 'DrinksMenuCtrl'
+        }
+      }
+    })
+    .state('menu.bakery', {
+      url: '/bakery',
+      views: {
+        'content@sidebar': {
+          templateUrl: 'partials/menu.html',
+          controller: 'BakeryMenuCtrl'
         }
       }
     })
@@ -117,7 +124,7 @@ app.factory('utils', [function() {
 app.factory('reservations', [
   '$firebaseArray',
   function($firebaseArray) {
-    var ref = new Firebase('https://fbla-website-2016.firebaseio.com/reservations');
+    var ref = new Firebase('https://fbla-website.firebaseio.com/reservations');
     return $firebaseArray(ref);
   }
 ]);
@@ -125,7 +132,7 @@ app.factory('reservations', [
 app.factory('reviews', [
   '$firebaseArray',
   function($firebaseArray) {
-    var ref = new Firebase('https://fbla-website-2016.firebaseio.com/reviews');
+    var ref = new Firebase('https://fbla-website.firebaseio.com/reviews');
     return $firebaseArray(ref);
   }
 ]);
@@ -138,6 +145,21 @@ app.controller('IndexCtrl', [
   '$state',
   '$window',
   function($scope, $rootScope, utils, $http, $state) {
-
+    $scope.$state = $state;
   }
 ]);
+
+app.directive("scroll", function($window) {
+  return function(scope, element, attrs) {
+    angular.element($window).bind("scroll", function() {
+      if (this.pageYOffset >= 50) {
+        scope.transparentNavbar = true;
+        console.log('Scrolled below header.');
+      } else {
+        scope.transparentNavbar = false;
+        console.log('Header is in view.');
+      }
+      scope.$apply();
+    });
+  };
+});
