@@ -1,41 +1,41 @@
 [{
-  "name": "Chili Chicken",
-  "description": "tempura style, cool cucumbers, chili sauce",
-  "price": 12
+  "name": "Fresh Fruit Muffin",
+  "description": "Muffin filled with seasonal fruit and topped with cinnamon sugar",
+  "price": 2.7
 }, {
-  "name": "Calamari Fritti",
-  "description": "tempura vegetables, spicy aioli*",
-  "price": 13
+  "name": "Rocket Muffin",
+  "description": "Made with banana puree, carrots, hazelnuts, and molasses, topped with a dollop of raspberry jam",
+  "price": 2.5
 }, {
-  "name": "Japanese Gyoza",
-  "description": "pork dumplings with hot mustard",
-  "price": 12
+  "name": "Banana Ginger Muffin",
+  "description": "Vegan muffin made with toasted walnuts, freshly grated ginger, and banana puree",
+  "price": 2.5
 }, {
-  "name": "Lettuce Wraps",
-  "description": "toasted peanuts, crispy noodles, fresh cilantro + chicken or shrimp",
-  "price": 12.5
+  "name": "Morning Glory Muffin",
+  "description": "A supremely moist muffing loaded with pineapples, carrots, apples, coconut, walnuts, and raisins",
+  "price": 2.6
 }, {
-  "name": "Pesto Shrimp Flatbreat",
-  "description": "whole milk mozzarella, sundried tomatoes, chipotle aioli",
-  "price": 14.5
+  "name": "Bluberry Scone",
+  "description": "Delicious buttermilk scone studded with sweet, tangy blueberries laced with orange zest",
+  "price": 2.8
 }, {
-  "name": "Tandoori Chicken Flatbread",
-  "description": "chutney, red onion, cilantro, yogurt",
-  "price": 14.5
+  "name": "Citrus Oat Scone",
+  "description": "Special scone flavored with fresh orange zest and raisins",
+  "price": 2.8
 }, {
-  "name": "Hot Wings",
-  "description": "Frank's hot sauce, creamy blue cheese dip",
-  "price": 12
+  "name": "Cherry Almond Scone",
+  "description": "Scottish scone made with currants, fresh orange zest, and a hint of anise",
+  "price": 3
 }, {
-  "name": "Yam Fries",
-  "description": "grated Grana Padano, truffle lemon aioli",
-  "price": 8.5
+  "name": "Morning Roll",
+  "description": "Swirl of croissant sweetened with vanilla sugar and baked to a golden brown",
+  "price": 3.5
 }, {
-  "name": "Caesar Starter",
-  "description": "+ chicken $4",
-  "price": 7
+  "name": "Orange Hazelnut Pinwheel",
+  "description": "Croissant rolled with roasted hazelnuts and topped with fresh orange glaze",
+  "price": 3.5
 }, {
-  "name": "House Salad Starter",
-  "description": "+ chicken $4",
-  "price": 7
+  "name": "Apple Turnover",
+  "description": "A favorite any time of day featuring roasted Washington apples",
+  "price": 4
 }]
