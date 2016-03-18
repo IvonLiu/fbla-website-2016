@@ -4,7 +4,7 @@ Created for the Website Design category of FBLA 2016.
 
 ## Credits
 
-All photos taken by me.
+All photos taken by me.  
 All design and code done by me.
 
 ## Take a Look!
